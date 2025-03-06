@@ -1,0 +1,58 @@
+import { VacuumCleaner } from '../types';
+
+export const vacuums: VacuumCleaner[] = [
+  {
+    id: '1',
+    name: 'Roomba j7+',
+    brand: 'iRobot',
+    price: 599.99,
+    previousPrice: 799.99,
+    condition: 'new',
+    priceHistory: [
+      { date: '2024-01-01', price: 799.99 },
+      { date: '2024-02-01', price: 699.99 },
+      { date: '2024-03-01', price: 599.99 },
+    ],
+    specs: {
+      suction: 2500,
+      batteryLife: 120,
+      dustBinCapacity: 400,
+      noiseLevel: 58,
+      height: 85,
+      mapping: true,
+      mopping: false,
+      autoEmptying: true,
+    },
+    features: ['Obstacle Avoidance', 'Smart Mapping', 'Auto Empty Base'],
+    imageUrl: 'https://images.unsplash.com/photo-1632829882891-5047ccc421bc?auto=format&fit=crop&q=80&w=400',
+    amazonUrl: 'https://amazon.com',
+    lastUpdated: '2024-03-01',
+  },
+  {
+    id: '2',
+    name: 'Roborock S8 Pro Ultra',
+    brand: 'Roborock',
+    price: 1199.99,
+    previousPrice: 1599.99,
+    condition: 'new',
+    priceHistory: [
+      { date: '2024-01-01', price: 1599.99 },
+      { date: '2024-02-01', price: 1399.99 },
+      { date: '2024-03-01', price: 1199.99 },
+    ],
+    specs: {
+      suction: 6000,
+      batteryLife: 180,
+      dustBinCapacity: 400,
+      noiseLevel: 67,
+      height: 96,
+      mapping: true,
+      mopping: true,
+      autoEmptying: true,
+    },
+    features: ['Self-Washing Mop', '3D Mapping', 'Auto Empty & Fill'],
+    imageUrl: 'https://images.unsplash.com/photo-1673449936646-1d86d6f4d54c?auto=format&fit=crop&q=80&w=400',
+    amazonUrl: 'https://amazon.com',
+    lastUpdated: '2024-03-01',
+  },
+];
